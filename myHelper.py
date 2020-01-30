@@ -36,9 +36,9 @@ def remainder(x, y):
 def strLen(x):
     return len(x)
 
-def isUpper(x):
+def isUpperCase(x):
     isUps = x[0]
-    if isUps.isUpper():
+    if isUps.isupper():
         return "Upper case"
     else:
         return "Not upper case"
