@@ -14,6 +14,10 @@ def squared(x):
     if x > 0:
         return x * x
 
+def squareRoot(x):
+    if x > 0:
+       return x**(1/2)
+
 def addition(x, y):
     if x > 0 and y > 0:
         return x + y
@@ -37,8 +41,8 @@ def strLen(x):
     return len(x)
 
 def isUpperCase(x):
-    isUps = x[0]
-    if isUps.isupper():
+    upWord = x[0]
+    if upWord.isupper():
         return "Upper case"
     else:
         return "Not upper case"
