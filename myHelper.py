@@ -39,7 +39,11 @@ def division(x, y):
 def remainder(x, y):
     return x % y
 
+def strLenWhiteSpace(x):
+    return len(x)
+
 def strLen(x):
+    x = x.replace(" ", "")
     return len(x)
 
 def isUpperCase(x):
@@ -100,3 +104,10 @@ def Median(numbers):
 def Mode(numbers):
     mostCommon = Counter(numbers)
     return mostCommon.most_common(1)
+
+def countCaps(x):
+    count = 0
+    for i in x:
+        if i.isupper():
+            count += 1
+    return str(count) + " Capital letters"
