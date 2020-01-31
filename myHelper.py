@@ -53,7 +53,7 @@ def isCaps(x):
     isCapitals = x
     sentLen = len(isCapitals)
     fullWord = isCapitals[0 : sentLen]
-    if fullWord.isUpper():
+    if fullWord.isupper():
         return "Capitals"
     else:
         return "Not capitals"
