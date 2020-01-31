@@ -1,3 +1,5 @@
+from collections import Counter
+
 def maxVal(x, y):
     if x > y:
         return x
@@ -70,3 +72,31 @@ def evenOdd(x):
        return str(x) + " is even"
     else:
         return str(x) + " is odd"
+
+def Mean(numbers):
+    speedSum = sum(numbers)
+    listlen = len(numbers)
+    answer = speedSum / listlen
+    return answer
+
+def Median(numbers):
+    listlen = len(numbers)
+    myEven = False
+
+    if (listlen % 2) == 0:
+        mean = listlen / 2
+        myEven = True
+    else:
+        mean = listlen / 2 - 0.50
+        myEven = False
+
+    newMean = int(mean)
+    plusOne = newMean - 1
+    if myEven:
+        return numbers[plusOne], "and", numbers[newMean]
+    else:
+        return numbers[newMean]
+
+def Mode(numbers):
+    mostCommon = Counter(numbers)
+    return mostCommon.most_common(1)
