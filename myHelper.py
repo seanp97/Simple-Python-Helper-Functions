@@ -120,4 +120,4 @@ def bubbleSort(list):
                 list[i] = list[i + 1]
                 list[i + 1] = swap
 
-    return myList
+    return list
