@@ -111,3 +111,13 @@ def countCaps(x):
         if i.isupper():
             count += 1
     return str(count) + " Capital letters"
+
+def bubbleSort(list):
+    for j in range(0, len(list) - 1):
+        for i in range(0, len(list) - 1):
+            if list[i] > list[i + 1]:
+                swap = list[i]
+                list[i] = list[i + 1]
+                list[i + 1] = swap
+
+    return myList
