@@ -121,3 +121,54 @@ def bubbleSort(list):
                 list[i + 1] = swap
 
     return list
+
+def listSum(x):
+    count = 0
+    for i in x:
+        count += i
+
+    return count
+
+def arrayBigger(x, y):
+    x = listSum(x)
+    y = listSum(y)
+
+    if x > y:
+        return "List one is bigger"
+    else:
+        return "List two is bigger"
+
+def addListSum(x, y):
+    x = listSum(x)
+    y = listSum(y)
+
+    return x + y
+
+def subtractListSum(x, y):
+    x = listSum(x)
+    y = listSum(y)
+
+    return x - y
+
+def numInList(x, theList):
+    if x in theList:
+        return True
+    else:
+        return False
+
+def checkNegative(x):
+    if x < 0:
+        return True
+    else:
+        return False
+
+def powerOf(x, y):
+    return x**y
+
+def nextWholeNumber(x):
+    a = x - int(x)
+    remain = 1 - a
+    if a > 0.5:
+        return x + remain
+    else:
+        return x - a
